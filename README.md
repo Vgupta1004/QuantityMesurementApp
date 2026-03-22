@@ -1,10 +1,16 @@
 # QuantityMesurementApp
 
-## Use Case 6: Load History
+## Use Case 7: Apply Conversion
 ### Description
-GET /history?_sort=timestamp&_order=desc
+Multiply by factor OR evaluate formula string
 
 The Flow:-
- - export async function getHistory() { }
- - const res = await fetch(`${BASE_URL}/history?_sort=timestamp&_order=desc`)
- - return await res.json()
+ - function applyConversion(value, convObj) { }
+ - if (convObj.factor !== null)
+
+     return parseFloat((value * convObj.factor).toFixed(6))
+ - else (formula path):
+
+     const expr = convObj.formula.replace("x", value)
+
+     return parseFloat(eval(expr).toFixed(6))
