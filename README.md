@@ -1,15 +1,12 @@
 # QuantityMesurementApp
 
-## Use Case 15: Handle Type Card Click
+## Use Case 16: Handle Action Tab Click
 ### Description
-Update state, reload units, reset result
+Switch mode, toggle operator row, reset result
 
 The Flow:-
- - querySelectorAll(".type-card").forEach(card => card.addEventListener("click", async () => {
- - state.type = card.dataset.type
- - setActive(typeSelector, card, ".type-card")
- - fromInput.value = ""; toInput.value = ""; showResult(0, "")
- - const units = await getUnits(state.type)
- - populateDropdown(fromSelect, units)
- - populateDropdown(toSelect, units)
- - state.fromUnit = ""; state.toUnit = "" }))
+ - querySelectorAll(".action-btn").forEach(btn => btn.addEventListener("click", () => {
+ - state.action = btn.dataset.action
+ - setActive(actionSelector, btn, ".action-btn")
+ - toggleOperators(state.action === "Arithmetic")
+ - showResult(0, "") }))

@@ -66,6 +66,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
+  // UC-JS-16 — Action tab click handlers
+  actionSelector.querySelectorAll(".action-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      // Update state
+      state.action = btn.dataset.action;
+
+      // Highlight clicked button
+      setActive(actionSelector, btn, ".action-btn");
+
+      // Show operator row only in Arithmetic mode
+      toggleOperators(state.action === "Arithmetic");
+
+      // Reset result
+      showResult("—", "");
+
+    });
+  });
+
 
   // ── helpers ──
 
