@@ -1,13 +1,10 @@
 # QuantityMesurementApp
 
-## Use Case 2: Initialise App on Page Load
+## Use Case 3: Fetch Units by Type
 ### Description
-Wire up event listeners and load default data
+GET /units?type=X from json-server
 The Flow:-
- - Wrap all code in: document.addEventListener("DOMContentLoaded", async () => { ... })
- - Declare state = { type:"Length", action:"Conversion", fromVal:null, fromUnit:"", toVal:null, toUnit:"", operator:"+" }
- - Call attachEventListeners().
- - Call loadUnits("Length") to populate FROM and TO dropdowns.
- - Set first type-card and first action-button as active.
- - Hide operator row: toggleOperators(false).
- - Call loadHistory().
+ - export async function getUnits(type) { }
+ - const res = await fetch(`http://localhost:3000/units?type=${type}`)
+ - if (!res.ok) throw new Error(`HTTP ${res.status}`)
+ - return await res.json()
