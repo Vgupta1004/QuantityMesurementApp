@@ -1,16 +1,11 @@
 # QuantityMesurementApp
 
-## Use Case 7: Apply Conversion
+## Use Case 8: Compare Two Values
 ### Description
-Multiply by factor OR evaluate formula string
+Normalise both to base unit, then compare
 
 The Flow:-
- - function applyConversion(value, convObj) { }
- - if (convObj.factor !== null)
-
-     return parseFloat((value * convObj.factor).toFixed(6))
- - else (formula path):
-
-     const expr = convObj.formula.replace("x", value)
-
-     return parseFloat(eval(expr).toFixed(6))
+ - function compareValues(v1, u1, v2, u2, base1, base2) { }
+ - if (base1 > base2) return `${v1} ${u1} is GREATER than ${v2} ${u2}`
+ - if (base1 < base2) return `${v1} ${u1} is LESS than ${v2} ${u2}`
+ - return `${v1} ${u1} is EQUAL to ${v2} ${u2}`
