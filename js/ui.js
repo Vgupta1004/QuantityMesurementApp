@@ -63,3 +63,23 @@ function toggleOperators(show) {
 
   opRow.style.display = show ? "flex" : "none";
 }
+
+function renderHistory(records) {
+  const list = document.querySelector("#history-list");
+
+  // Clear current list
+  list.innerHTML = "";
+
+  // Guard — treat undefined as empty array
+  if (!records || !records.length) {
+    list.innerHTML = "<li>No history yet.</li>";
+    return;
+  }
+
+  // One <li> per record
+  records.forEach(r => {
+    const li = document.createElement("li");
+    li.textContent = `${r.expression} = ${r.result} (${new Date(r.timestamp).toLocaleString()})`;
+    list.appendChild(li);
+  });
+}
