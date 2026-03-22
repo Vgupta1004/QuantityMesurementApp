@@ -1,18 +1,15 @@
 # QuantityMesurementApp
 
-## Use Case 14: Render History List
+## Use Case 15: Handle Type Card Click
 ### Description
-Clear and rebuild the history panel from an array of records
+Update state, reload units, reset result
 
 The Flow:-
- - function renderHistory(records) { }
- - const list = document.querySelector("#history-list")
- - list.innerHTML = ""
- - if (!records.length) { list.innerHTML = "<li>No history yet.</li>"; return }
- - records.forEach(r => {
-
-     const li = document.createElement("li")
-
-     li.textContent = `${r.expression}  =  ${r.result}  (${new Date(r.timestamp).toLocaleString()})`
-
-     list.appendChild(li) })
+ - querySelectorAll(".type-card").forEach(card => card.addEventListener("click", async () => {
+ - state.type = card.dataset.type
+ - setActive(typeSelector, card, ".type-card")
+ - fromInput.value = ""; toInput.value = ""; showResult(0, "")
+ - const units = await getUnits(state.type)
+ - populateDropdown(fromSelect, units)
+ - populateDropdown(toSelect, units)
+ - state.fromUnit = ""; state.toUnit = "" }))
