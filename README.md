@@ -1,11 +1,19 @@
 # QuantityMesurementApp
 
-## Use Case 8: Compare Two Values
+## Use Case 9: Arithmetic Operation
 ### Description
-Normalise both to base unit, then compare
+Apply +/−/×/÷ after normalising TO value to FROM unit
 
 The Flow:-
- - function compareValues(v1, u1, v2, u2, base1, base2) { }
- - if (base1 > base2) return `${v1} ${u1} is GREATER than ${v2} ${u2}`
- - if (base1 < base2) return `${v1} ${u1} is LESS than ${v2} ${u2}`
- - return `${v1} ${u1} is EQUAL to ${v2} ${u2}`
+ - function performArithmetic(v1, v2normalised, op) { }
+ - switch(op):
+   "+": return parseFloat((v1 + v2normalised).toFixed(6))
+
+   "-": return parseFloat((v1 - v2normalised).toFixed(6))
+
+   "*": return parseFloat((v1 * v2normalised).toFixed(6))
+
+   "/": if (v2normalised === 0) throw Error("Divide by zero")
+
+        return parseFloat((v1 / v2normalised).toFixed(6))
+ - default: throw Error("Unknown operator")
