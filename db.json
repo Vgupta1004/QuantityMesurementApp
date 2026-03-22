@@ -1281,15 +1281,652 @@
   ],
   "history": [
     {
-      "id": "JI8d73kQUJ4"
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:29:32.547Z",
+      "id": "icGv3kBbNkU"
     },
     {
       "type": "Length",
       "action": "Conversion",
-      "expression": "1km -> m",
-      "result": "1000m",
-      "timestamp": "2026-03-22T05:48:41.888Z",
-      "id": "51N-p0jSM88"
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:29:33.980Z",
+      "id": "MUKMmyVEWwY"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:29:36.563Z",
+      "id": "lFBWc-plQ8k"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:29:38.613Z",
+      "id": "_0fRmBQ02OY"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "11 m + 5 m",
+      "result": "16 m",
+      "timestamp": "2026-03-22T08:29:43.546Z",
+      "id": "IzdT6Dos3_o"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "10 m - 5 m",
+      "result": "5 m",
+      "timestamp": "2026-03-22T08:29:48.536Z",
+      "id": "iMiF3nBD03g"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:33:51.401Z",
+      "id": "yUSU5oIEF9c"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "10 m - 5 m",
+      "result": "5 m",
+      "timestamp": "2026-03-22T08:33:56.497Z",
+      "id": "B4jYOSJ5h80"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:33:59.618Z",
+      "id": "n3324tZtvrg"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:37:32.357Z",
+      "id": "1rYU9ZzUZVw"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T08:37:34.126Z",
+      "id": "Wz1VSzh2Nsw"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:37:36.757Z",
+      "id": "0JFhqfuMGac"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "10 m - 5 m",
+      "result": "5 m",
+      "timestamp": "2026-03-22T08:37:40.217Z",
+      "id": "Keb773lYTNM"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "0 km vs 1000 m",
+      "result": "0 km is LESS than 1000 m",
+      "timestamp": "2026-03-22T08:40:29.216Z",
+      "id": "CY60tlzdeXM"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "0 km → m",
+      "result": "0 m",
+      "timestamp": "2026-03-22T08:40:29.603Z",
+      "id": "WSZZBTwQoN0"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "0 km → m",
+      "result": "0 m",
+      "timestamp": "2026-03-22T08:40:30.549Z",
+      "id": "1sE0Lw74o5I"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "0 km → m",
+      "result": "0 m",
+      "timestamp": "2026-03-22T08:40:31.098Z",
+      "id": "ixStYhoKm-g"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "0 km → m",
+      "result": "0 m",
+      "timestamp": "2026-03-22T08:40:31.465Z",
+      "id": "EdiHWEWJlsg"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:44:43.470Z",
+      "id": "kCaXWc2uzkw"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:44:47.488Z",
+      "id": "P7z4a0r61_k"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:47:53.328Z",
+      "id": "f_US4Aw-_9o"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "2 km + 1000 m",
+      "result": "3 km",
+      "timestamp": "2026-03-22T08:47:57.528Z",
+      "id": "EhLhvZEtC-k"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T08:50:52.023Z",
+      "id": "QhFsxEFeZ70"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "1 km - 1000 m",
+      "result": "0 km",
+      "timestamp": "2026-03-22T08:50:55.091Z",
+      "id": "etzP2TXiDMI"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:01:54.122Z",
+      "id": "h18YZPDNCOQ"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:04:05.216Z",
+      "id": "fj2buuk2lJ8"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:04:08.898Z",
+      "id": "dVEaR8iK-L0"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:09.381Z",
+      "id": "YN8d_akBC-Y"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:10.680Z",
+      "id": "8riR4AOSXNk"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:11.098Z",
+      "id": "y-QBzSmgczA"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:11.515Z",
+      "id": "mtBT4M-k320"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:11.898Z",
+      "id": "ei_xzNQ7ZJc"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:12.251Z",
+      "id": "NCUG_DmoRQw"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:12.631Z",
+      "id": "9EFcjcqeECw"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:13.015Z",
+      "id": "HkQanI4rqw8"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:04:13.431Z",
+      "id": "lAXpJSBfRhY"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "2 km + 1000 m",
+      "result": "3 km",
+      "timestamp": "2026-03-22T09:04:16.914Z",
+      "id": "Lh_mKKK8Ito"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "1 km + 1001 m",
+      "result": "2.001 km",
+      "timestamp": "2026-03-22T09:04:20.314Z",
+      "id": "FhPAb-3F8dQ"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:05:43.661Z",
+      "id": "adiUdr5kBew"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:05:48.711Z",
+      "id": "3ptsNVV-s78"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:01.447Z",
+      "id": "KFkw4Bi4gCI"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:02.343Z",
+      "id": "MRXkPuG_bgw"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:03.095Z",
+      "id": "uQ20enXKltg"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:12.085Z",
+      "id": "pdidQdllaGU"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:12.953Z",
+      "id": "T9nAP1qkD8c"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:13.989Z",
+      "id": "ktBs39HayLA"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:14.647Z",
+      "id": "M2nHRqKoIVA"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:18.863Z",
+      "id": "WSnKkZJMJKc"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:28.864Z",
+      "id": "yfgBEB43m3U"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:29.736Z",
+      "id": "289I_PSy-gI"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:06:30.411Z",
+      "id": "ydeqH-VXdig"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:07:50.771Z",
+      "id": "a8coSmsW6uY"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:09:56.716Z",
+      "id": "FO5eQAUSSVM"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 1000 m",
+      "result": "2 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:56.798Z",
+      "id": "K4L5ALtM1HU"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "3 km vs 1000 m",
+      "result": "3 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:58.894Z",
+      "id": "N4lknyB0IF4"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "4 km vs 1000 m",
+      "result": "4 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:59.106Z",
+      "id": "FBq32u6pbrQ"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "5 km vs 1000 m",
+      "result": "5 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:59.578Z",
+      "id": "GMZfH8RkNkg"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "6 km vs 1000 m",
+      "result": "6 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:59.733Z",
+      "id": "H0yAa0hm7iU"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "7 km vs 1000 m",
+      "result": "7 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:10:59.955Z",
+      "id": "6Em-JTPv0Wk"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "8 km vs 1000 m",
+      "result": "8 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:11:00.181Z",
+      "id": "tqT3BLW4ETw"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "9 km vs 1000 m",
+      "result": "9 km is GREATER than 1000 m",
+      "timestamp": "2026-03-22T09:11:00.405Z",
+      "id": "mxXgFP9k2WQ"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "9 km vs 999 m",
+      "result": "9 km is GREATER than 999 m",
+      "timestamp": "2026-03-22T09:11:01.711Z",
+      "id": "9w2_N9Ax1kg"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "9 km vs 999 cm",
+      "result": "9 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:08.578Z",
+      "id": "TJRGOWOaZgM"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "8 km vs 999 cm",
+      "result": "8 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:12.147Z",
+      "id": "ygrWBQ-5jo0"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "7 km vs 999 cm",
+      "result": "7 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:12.298Z",
+      "id": "5rLQDs-IsMs"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "6 km vs 999 cm",
+      "result": "6 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:12.453Z",
+      "id": "p4UCahQo4NM"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "5 km vs 999 cm",
+      "result": "5 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:12.609Z",
+      "id": "pMZiOY5akoU"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "4 km vs 999 cm",
+      "result": "4 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:12.837Z",
+      "id": "ki7ttaoahQE"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "3 km vs 999 cm",
+      "result": "3 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:13.039Z",
+      "id": "Yg4iZoDYHFM"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "2 km vs 999 cm",
+      "result": "2 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:13.447Z",
+      "id": "JbhaNE70p0E"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 999 cm",
+      "result": "1 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:14.008Z",
+      "id": "HVdCybabEl0"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "0 km vs 999 cm",
+      "result": "0 km is LESS than 999 cm",
+      "timestamp": "2026-03-22T09:11:14.516Z",
+      "id": "SYXsVlFB9co"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 999 cm",
+      "result": "1 km is GREATER than 999 cm",
+      "timestamp": "2026-03-22T09:11:15.415Z",
+      "id": "w-wpHI3GYCw"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1000 cm",
+      "result": "1 km is GREATER than 1000 cm",
+      "timestamp": "2026-03-22T09:11:16.927Z",
+      "id": "rJJOgjmlY7M"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1001 cm",
+      "result": "1 km is GREATER than 1001 cm",
+      "timestamp": "2026-03-22T09:11:17.429Z",
+      "id": "zMLQnhApjWY"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1002 cm",
+      "result": "1 km is GREATER than 1002 cm",
+      "timestamp": "2026-03-22T09:11:17.647Z",
+      "id": "ZhHpbk_j7RI"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1001 cm",
+      "result": "1 km is GREATER than 1001 cm",
+      "timestamp": "2026-03-22T09:11:19.093Z",
+      "id": "Xbm2ZQFOyFQ"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1000 cm",
+      "result": "1 km is GREATER than 1000 cm",
+      "timestamp": "2026-03-22T09:11:19.316Z",
+      "id": "Ef3tWJBIxz8"
+    },
+    {
+      "type": "Length",
+      "action": "Comparison",
+      "expression": "1 km vs 1000 m",
+      "result": "1 km is EQUAL to 1000 m",
+      "timestamp": "2026-03-22T09:11:22.300Z",
+      "id": "yOaxIVokbb4"
+    },
+    {
+      "type": "Length",
+      "action": "Conversion",
+      "expression": "2 km → m",
+      "result": "2000 m",
+      "timestamp": "2026-03-22T09:11:28.060Z",
+      "id": "A15lJwYViRk"
+    },
+    {
+      "type": "Length",
+      "action": "Arithmetic",
+      "expression": "2 km + 1999 m",
+      "result": "3.999 km",
+      "timestamp": "2026-03-22T09:11:37.176Z",
+      "id": "BM1I3DRgYjg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

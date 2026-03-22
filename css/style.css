@@ -392,15 +392,6 @@ header h1 span { color: var(--text-muted); font-weight: 400; }
   color: var(--text-muted);
 }
 
-/* Highlight flash — UC-JS-12 */
-.highlight {
-  animation: flashHighlight 1.5s ease;
-}
-@keyframes flashHighlight {
-  0%   { border-color: var(--lavender); box-shadow: 0 0 0 4px rgba(196,181,244,0.35); }
-  100% { border-color: var(--lavender-mid); box-shadow: none; }
-}
-
 /* ── History section — UC-JS-14 ── */
 .history-section {
   margin-top: 36px;

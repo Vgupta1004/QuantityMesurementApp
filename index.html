@@ -43,9 +43,9 @@
   <!-- CHANGE: removed onclick, added data-action for app.js to read -->
   <div class="section-label">Choose Action</div>
   <div class="action-bar" id="action-selector">
-    <button class="action-btn" data-action="Comparison">Comparison</button>
-    <button class="action-btn" data-action="Conversion">Conversion</button>
-    <button class="action-btn" data-action="Arithmetic">Arithmetic</button>
+    <button type="button" class="action-btn" data-action="Comparison">Comparison</button>
+    <button type="button" class="action-btn active" data-action="Conversion">Conversion</button>
+    <button type="button" class="action-btn" data-action="Arithmetic">Arithmetic</button>
   </div>
 
   <!-- OPERATOR ROW — UC-JS-13: toggled by toggleOperators() in ui.js -->
@@ -70,8 +70,8 @@
       <div class="value-row">
         <input class="conv-value" id="from-input" type="number" placeholder="0"/>
         <div class="stepper">
-          <button class="step-btn" id="from-up">+</button>
-          <button class="step-btn" id="from-down">−</button>
+          <button type="button" class="step-btn" id="from-up">+</button>
+          <button type="button" class="step-btn" id="from-down">−</button>
         </div>
       </div>
       <div class="conv-divider"></div>
@@ -87,7 +87,7 @@
     <!-- Middle col: swap button (Conversion) or VS badge (Comparison) -->
     <div class="swap-col">
       <!-- swap-btn shown in Conversion mode -->
-      <button class="swap-btn" id="swap-btn" title="Swap">
+      <button type="button" class="swap-btn" id="swap-btn" title="Swap">
         <svg viewBox="0 0 24 24"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
       </button>
       <!-- vs-badge shown in Comparison mode (hidden by default) -->
@@ -102,8 +102,8 @@
         <input class="conv-value" id="to-input" type="number" placeholder="—"/>
         <!-- Stepper hidden in Conversion (to-input is readonly), shown in Comparison/Arithmetic -->
         <div class="stepper" id="to-stepper" style="display:none;">
-          <button class="step-btn" id="to-up">+</button>
-          <button class="step-btn" id="to-down">−</button>
+          <button type="button" class="step-btn" id="to-up">+</button>
+          <button type="button" class="step-btn" id="to-down">−</button>
         </div>
       </div>
       <div class="conv-divider"></div>
