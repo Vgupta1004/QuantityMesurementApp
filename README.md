@@ -1,19 +1,10 @@
 # QuantityMesurementApp
 
-## Use Case 10: Populate Unit Dropdown
+## Use Case 11: Set Active Button
 ### Description
-Fill a select with unit options after getUnits()
+Highlight selected type card / action tab / operator button
 
 The Flow:-
- - function populateDropdown(selectEl, units) { }
- - selectEl.innerHTML = ""
- - Append disabled+selected default option: "-- Select Unit --"
- - units.forEach(u => {
-
-     const opt = document.createElement("option")
-
-     opt.value = u.symbol
-
-     opt.textContent = `${u.label} (${u.symbol})`
-
-     selectEl.appendChild(opt) })
+ - function setActive(parentEl, clickedEl, childSelector) { }
+ - parentEl.querySelectorAll(childSelector).forEach(el => el.classList.remove("active"))
+ - clickedEl.classList.add("active")

@@ -23,3 +23,18 @@ function populateDropdown(selectEl, units) {
     selectEl.appendChild(opt);
   });
 }
+
+function setActive(parentEl, clickedEl, childSelector) {
+  if (!parentEl) {
+    console.warn("setActive: parentEl is null");
+    return;
+  }
+
+  // Remove active from all siblings
+  parentEl.querySelectorAll(childSelector).forEach(el => {
+    el.classList.remove("active");
+  });
+
+  // Add active to clicked
+  clickedEl.classList.add("active");
+}
