@@ -1,19 +1,19 @@
 # QuantityMesurementApp
 
-## Use Case 9: Arithmetic Operation
+## Use Case 10: Populate Unit Dropdown
 ### Description
-Apply +/−/×/÷ after normalising TO value to FROM unit
+Fill a select with unit options after getUnits()
 
 The Flow:-
- - function performArithmetic(v1, v2normalised, op) { }
- - switch(op):
-   "+": return parseFloat((v1 + v2normalised).toFixed(6))
+ - function populateDropdown(selectEl, units) { }
+ - selectEl.innerHTML = ""
+ - Append disabled+selected default option: "-- Select Unit --"
+ - units.forEach(u => {
 
-   "-": return parseFloat((v1 - v2normalised).toFixed(6))
+     const opt = document.createElement("option")
 
-   "*": return parseFloat((v1 * v2normalised).toFixed(6))
+     opt.value = u.symbol
 
-   "/": if (v2normalised === 0) throw Error("Divide by zero")
+     opt.textContent = `${u.label} (${u.symbol})`
 
-        return parseFloat((v1 / v2normalised).toFixed(6))
- - default: throw Error("Unknown operator")
+     selectEl.appendChild(opt) })
