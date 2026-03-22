@@ -25,3 +25,13 @@ async function saveHistory(record) {
     console.error("saveHistory failed:", err);
   }
 }
+
+async function getHistory() {
+  try {
+    const res = await fetch(`${BASE_URL}/history?_sort=timestamp&_order=desc`);
+    return await res.json();
+  } catch (err) {
+    console.error("getHistory failed:", err);
+    return [];
+  }
+}

@@ -1,18 +1,10 @@
 # QuantityMesurementApp
 
-## Use Case 5: Save to History
+## Use Case 6: Load History
 ### Description
-POST /history
+GET /history?_sort=timestamp&_order=desc
 
 The Flow:-
- - export async function saveHistory(record) { }
- - const res = await fetch(`${BASE_URL}/history`, {
-
-     method: "POST",
-
-     headers: { "Content-Type": "application/json" },
-
-     body: JSON.stringify(record)
-
-   })
+ - export async function getHistory() { }
+ - const res = await fetch(`${BASE_URL}/history?_sort=timestamp&_order=desc`)
  - return await res.json()
