@@ -1,12 +1,18 @@
 # QuantityMesurementApp
 
-## Use Case 4: Fetch Conversion Record
+## Use Case 5: Save to History
 ### Description
-GET /conversions?from=X&to=Y
+POST /history
 
 The Flow:-
- - export async function getConversion(from, to) { }
- - const res = await fetch(`${BASE_URL}/conversions?from=${from}&to=${to}`)
- - const data = await res.json()   // json-server returns array even for one result
- - if (!data.length) throw new Error("No conversion found")
- - return data[0]
+ - export async function saveHistory(record) { }
+ - const res = await fetch(`${BASE_URL}/history`, {
+
+     method: "POST",
+
+     headers: { "Content-Type": "application/json" },
+
+     body: JSON.stringify(record)
+
+   })
+ - return await res.json()

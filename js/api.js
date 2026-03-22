@@ -12,3 +12,16 @@ async function getConversion(from, to) {
   if (!data.length) throw new Error("No conversion found");
   return data[0];
 }
+
+async function saveHistory(record) {
+  try {
+    const res = await fetch(`${BASE_URL}/history`, {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify(record)
+    });
+    return await res.json();
+  } catch (err) {
+    console.error("saveHistory failed:", err);
+  }
+}
