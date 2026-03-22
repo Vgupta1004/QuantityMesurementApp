@@ -1,10 +1,12 @@
 # QuantityMesurementApp
 
-## Use Case 3: Fetch Units by Type
+## Use Case 4: Fetch Conversion Record
 ### Description
-GET /units?type=X from json-server
+GET /conversions?from=X&to=Y
+
 The Flow:-
- - export async function getUnits(type) { }
- - const res = await fetch(`http://localhost:3000/units?type=${type}`)
- - if (!res.ok) throw new Error(`HTTP ${res.status}`)
- - return await res.json()
+ - export async function getConversion(from, to) { }
+ - const res = await fetch(`${BASE_URL}/conversions?from=${from}&to=${to}`)
+ - const data = await res.json()   // json-server returns array even for one result
+ - if (!data.length) throw new Error("No conversion found")
+ - return data[0]
