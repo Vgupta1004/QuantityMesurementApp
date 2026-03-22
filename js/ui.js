@@ -38,3 +38,17 @@ function setActive(parentEl, clickedEl, childSelector) {
   // Add active to clicked
   clickedEl.classList.add("active");
 }
+
+function showResult(value, unitSymbol) {
+  const resultValue = document.querySelector("#result-value");
+  const resultUnit  = document.querySelector("#result-unit");
+
+  // Write value — show "—" if null
+  resultValue.textContent = (value === null || value === undefined) ? "—" : value;
+  resultUnit.textContent  = unitSymbol;
+
+  // Highlight animation
+  const panel = document.getElementById("result-panel");
+  panel.classList.add("highlight");
+  setTimeout(() => panel.classList.remove("highlight"), 1500);
+}

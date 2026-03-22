@@ -1,10 +1,11 @@
 # QuantityMesurementApp
 
-## Use Case 11: Set Active Button
+## Use Case 12: Show Result
 ### Description
-Highlight selected type card / action tab / operator button
+Write calculated value and unit to the RESULT panel
 
 The Flow:-
- - function setActive(parentEl, clickedEl, childSelector) { }
- - parentEl.querySelectorAll(childSelector).forEach(el => el.classList.remove("active"))
- - clickedEl.classList.add("active")
+ - function showResult(value, unitSymbol) { }
+ - document.querySelector("#result-value").textContent = value
+ - document.querySelector("#result-unit").textContent = unitSymbol
+ - Add "highlight" class; setTimeout 1500 ms to remove it
