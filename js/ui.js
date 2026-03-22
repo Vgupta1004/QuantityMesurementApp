@@ -52,3 +52,14 @@ function showResult(value, unitSymbol) {
   panel.classList.add("highlight");
   setTimeout(() => panel.classList.remove("highlight"), 1500);
 }
+
+function toggleOperators(show) {
+  const opRow = document.querySelector("#operator-selector");
+
+  if (!opRow) {
+    console.warn("toggleOperators: #operator-selector not found");
+    return;
+  }
+
+  opRow.style.display = show ? "flex" : "none";
+}
