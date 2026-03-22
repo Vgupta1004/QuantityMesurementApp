@@ -1,0 +1,25 @@
+{
+  "name": "quantitymesurementapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vgupta1004/QuantityMesurementApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vgupta1004/QuantityMesurementApp/issues"
+  },
+  "homepage": "https://github.com/Vgupta1004/QuantityMesurementApp#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "json-server": "^1.0.0-beta.13"
+  }
+}

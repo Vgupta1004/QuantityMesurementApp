@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quantity Measurement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-dot"></div>
+    <h1>Quantity <span>Measurement</span></h1>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- NAV 1: Choose Type -->
+  <!-- CHANGE: removed onclick, added data-type for app.js to read -->
+  <div class="section-label">Choose Type</div>
+  <div class="type-grid" id="type-selector">
+    <div class="type-card" data-type="Length">
+      <div class="icon-wrap"><img class="icon" src="assets/length-icon.png" alt="Length"/></div>
+      <span class="label">Length</span>
+    </div>
+    <div class="type-card" data-type="Weight">
+      <div class="icon-wrap"><img class="icon" src="assets/weight-icon.png" alt="Weight"/></div>
+      <span class="label">Weight</span>
+    </div>
+    <div class="type-card" data-type="Temperature">
+      <div class="icon-wrap"><img class="icon" src="assets/temperature-icon.png" alt="Temperature"/></div>
+      <span class="label">Temperature</span>
+    </div>
+    <div class="type-card" data-type="Volume">
+      <div class="icon-wrap"><img class="icon" src="assets/volume-icon.png" alt="Volume"/></div>
+      <span class="label">Volume</span>
+    </div>
+  </div>
+
+  <!-- NAV 2: Choose Action -->
+  <!-- CHANGE: removed onclick, added data-action for app.js to read -->
+  <div class="section-label">Choose Action</div>
+  <div class="action-bar" id="action-selector">
+    <button class="action-btn" data-action="Comparison">Comparison</button>
+    <button class="action-btn" data-action="Conversion">Conversion</button>
+    <button class="action-btn" data-action="Arithmetic">Arithmetic</button>
+  </div>
+
+  <!-- OPERATOR ROW — UC-JS-13: toggled by toggleOperators() in ui.js -->
+  <!-- NEW: this entire section is new, needed by the spec -->
+  <div id="operator-selector" style="display:none;">
+    <div class="section-label">Choose Operator</div>
+    <div class="action-bar op-bar">
+      <button class="action-btn op-btn" data-op="+">+ Add</button>
+      <button class="action-btn op-btn" data-op="-">− Subtract</button>
+      <button class="action-btn op-btn" data-op="*">× Multiply</button>
+      <button class="action-btn op-btn" data-op="/">÷ Divide</button>
+    </div>
+  </div>
+
+  <!-- INPUT BOXES -->
+  <!-- CHANGE: panels collapsed into one shared layout -->
+  <!-- From/Value A box -->
+  <div class="conversion-grid">
+    <div class="conv-box">
+      <!-- CHANGE: id renamed to from-input (spec UC-JS-15 uses fromInput) -->
+      <div class="conv-box-label" id="from-label">From</div>
+      <div class="value-row">
+        <input class="conv-value" id="from-input" type="number" placeholder="0"/>
+        <div class="stepper">
+          <button class="step-btn" id="from-up">+</button>
+          <button class="step-btn" id="from-down">−</button>
+        </div>
+      </div>
+      <div class="conv-divider"></div>
+      <div class="conv-select-wrap">
+        <!-- CHANGE: id renamed to from-select (spec UC-JS-10 uses fromSelect) -->
+        <select class="conv-select" id="from-select">
+          <option disabled selected>-- Select Unit --</option>
+        </select>
+        <span class="conv-caret">▾</span>
+      </div>
+    </div>
+
+    <!-- Middle col: swap button (Conversion) or VS badge (Comparison) -->
+    <div class="swap-col">
+      <!-- swap-btn shown in Conversion mode -->
+      <button class="swap-btn" id="swap-btn" title="Swap">
+        <svg viewBox="0 0 24 24"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
+      </button>
+      <!-- vs-badge shown in Comparison mode (hidden by default) -->
+      <div class="vs-badge" id="vs-badge" style="display:none;">VS</div>
+    </div>
+
+    <!-- To/Value B box -->
+    <div class="conv-box">
+      <!-- CHANGE: id renamed to to-input (spec UC-JS-15 uses toInput) -->
+      <div class="conv-box-label" id="to-label">To</div>
+      <div class="value-row">
+        <input class="conv-value" id="to-input" type="number" placeholder="—"/>
+        <!-- Stepper hidden in Conversion (to-input is readonly), shown in Comparison/Arithmetic -->
+        <div class="stepper" id="to-stepper" style="display:none;">
+          <button class="step-btn" id="to-up">+</button>
+          <button class="step-btn" id="to-down">−</button>
+        </div>
+      </div>
+      <div class="conv-divider"></div>
+      <div class="conv-select-wrap">
+        <!-- CHANGE: id renamed to to-select (spec UC-JS-10 uses toSelect) -->
+        <select class="conv-select" id="to-select">
+          <option disabled selected>-- Select Unit --</option>
+        </select>
+        <span class="conv-caret">▾</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULT PANEL — UC-JS-12: showResult() writes here -->
+  <!-- NEW: replaces the old arith-result-box; used for ALL 3 modes -->
+  <div class="result-panel" id="result-panel">
+    <div class="arith-result-box">
+      <span class="arith-result-val" id="result-value">—</span>
+      <span class="arith-result-unit" id="result-unit"></span>
+    </div>
+  </div>
+
+  <!-- HISTORY PANEL — UC-JS-14: renderHistory() writes here -->
+  <!-- NEW: needed by spec -->
+  <div class="history-section">
+    <div class="section-label">History</div>
+    <ul id="history-list">
+      <li>No history yet.</li>
+    </ul>
+  </div>
+
+</div><!-- /page -->
+
+<!-- CHANGE: removed all inline <script> — JS moved to separate files -->
+<!-- Script load order per UC-JS-01 spec (UC-JS-02 note) -->
+<script src="js/conversion.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
